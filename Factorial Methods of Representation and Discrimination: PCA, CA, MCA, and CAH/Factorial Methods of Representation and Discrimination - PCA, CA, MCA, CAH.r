@@ -1,7 +1,7 @@
 data(state)
 
 # dataframe
-USA = as.data.frame(state.x77)
+USA <- as.data.frame(state.x77)
 head(USA)
 
 dim(USA)
@@ -114,11 +114,7 @@ observed_freq
 outer(table(data$csp),observed_freq)
 
 
-
 table(data$csp)
-
-
-
 
 contingency_table = table(data$age,data$csp)
 my_CA=CA(contingency_table)
